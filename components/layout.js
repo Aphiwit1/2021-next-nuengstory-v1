@@ -2,15 +2,13 @@ import styles from "./layout.module.css";
 import Link from "next/link";
 import  { useRouter } from 'next/router';
 
-
-
 const name = "Your Name";
 export const siteTitle = "nuengStory | blog";
 
 // layout คือ element ที่ใช้ทุกหน้า เช่น header content footer 
 export default function Layout({ children, home }) {
-    const router = useRouter
-
+    const router = useRouter()
+        console.log("router : ", router)
 
     return (
         <div className={styles.container}>
@@ -18,12 +16,16 @@ export default function Layout({ children, home }) {
             <header className={styles.header}>
                 <div className={styles.headerLeft}><span className={styles.logoFirstWord}>nueng</span><span className={styles.logoSecondWord}>Story</span></div>
                 <div className={styles.headerRight}>
+                    
+   
                     <Link href="/">
-                        <a className={styles.pageName}>Home</a>
+                        <a className={router.pathname == "/"? styles['active'] : styles['pageName']}>Home</a>
                     </Link>
+                    
+                    
 
-                    <Link href="/" >
-                        <a className={styles.pageName}>About nueng</a>
+                    <Link href="/me" >
+                        <a className={router.pathname == "/me"? styles['active'] : styles['pageName']}>about me</a>
                     </Link>
                 </div>
             </header>

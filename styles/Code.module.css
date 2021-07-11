@@ -5,3 +5,9 @@
 .borderRadius20 {
     border-radius: 20px;
 }
+
+@media only screen and (max-width: 500px) { 
+    .Code{
+        font-size: 12px;
+    }
+}

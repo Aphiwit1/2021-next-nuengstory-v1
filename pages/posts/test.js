@@ -1,8 +1,9 @@
 import Layout from "../../components/layout";
-import Link from "next/link";
 import Head from "next/head";
 import Content from "./content.module.css";
 import Code from "../../styles/Code";
+import Image from 'next/image'
+
 export default function Test() {
     const cssOriginal = `.center-element { 
         height: 100px;
@@ -51,11 +52,11 @@ export default function Test() {
     <Layout>
       <>
         <Head>
-          <title> XXXXX TEST XXXXXX </title>
+          <title>nuengStory | CSS Trick: Element in center</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <meta property="og:title" content="My page title" key="title" />
-          <meta property="og:description" content="Hello tag description" key="ogdesc" />
-          <meta property="og:image" content="https://source.unsplash.com/collection/190727/1600x900" key="ogimage" />
+          <meta property="og:title" content="CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์" key="title" />
+          <meta property="og:description" content="ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย" key="ogdesc" />
+          <meta property="og:image" content="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0" key="ogimage" />
         </Head>
         {/* content */}
         <div className={Content.blogContentContainer}>
@@ -66,7 +67,13 @@ export default function Test() {
             </div>
 
           <div className={Content.imageCoverContainer}>
-          <img src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0" className={Content.contentImageCover}></img>
+          {/* <Image alt="blog cover" className={Content.contentImageCover} layout="fill" src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"  /> */}
+          {/* <Image
+        src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"
+        alt="Landscape picture"
+        width={500}
+        height={500}
+      /> */}
           </div>
             <div className={Content.textContent}>
             ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย
@@ -83,16 +90,16 @@ export default function Test() {
                 <span> HelloWorld </span>
               </div>
             </div>
-            <div className={Content.textContent}> ลลัพท์ที่คาดหวัง </div>
+            <div className={Content.textContent}> ผลลัพท์ที่คาดหวัง </div>
             <div className={Content.textContent}>
               <div className={Content.centerElementCenter}>
                 <span> HelloWorld </span>
               </div>
             </div>
             <div className={Content.textContent}>
-            จะสังเหตุว่าคำว่า HelloWorld นั้น มี &aposผลลัพท์ในตอนแรก&apos
-          แสดงอยู่ที่มุมบนซ้ายของกล่อง แล้วถ้าเราอยากจะให้
-          ย้ายมาอยู่ตรงกลางของกล่องแบบ &aposผลลัพท์ที่คาดหวัง&apos จะต้องทำอย่างไร
+            จะสังเหตุว่าคำว่า HelloWorld นั้น มี <strong>ผลลัพท์ในตอนแรก</strong> 
+           แสดงอยู่ที่มุมบนซ้ายของกล่อง แล้วถ้าเราอยากจะให้
+          ย้ายมาอยู่ตรงกลางของกล่องแบบ <strong>ผลลัพท์ที่คาดหวัง</strong> จะต้องทำอย่างไร
           มีวิธีอยู่หลายวิธีครับ มาติดตามกันเลย
             </div>
             <div className={Content.textTopic}> 1. ใช้ display:flex </div>

@@ -28,18 +28,29 @@ export default function Layout({ children, home }) {
                 </div>
             </header>
 
+
             {/* Content each page */}
             <main className={styles.body}>
+         
                 {children}
             </main>
 
-            {!home && (
+
+            {/* {!home && (
                 <div className={styles.backToHome}>
                     <Link href="/">
                         <a>← Back to home</a>
                     </Link>
                 </div>
-            )}
+            )} */}
+
+            <footer className={styles.footer}>
+                <div className={styles.socialContact}>XXXX</div>
+                <div className={styles.credit}>Created by @aphiwit</div>
+            </footer>
+
+
+          
         </div>
     );
 }

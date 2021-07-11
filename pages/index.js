@@ -20,7 +20,7 @@ export default function Home({ blogList }) {
             <a>
               <div className={styles.blogContainer}>
                 <div className={styles.blogImage}>
-                  
+                    <img  className={styles.imageCover} src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"></img>
                 </div>
                 <div className={styles.blogDetail}>
                   <div className={styles.title}>
@@ -58,4 +58,4 @@ export default function Home({ blogList }) {
     </>
   );
 }
-
+// https://www.dropbox.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0

@@ -64,6 +64,10 @@ export default function Test() {
               
             #CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์
             </div>
+
+          <div className={Content.imageCoverContainer}>
+          <img src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0" className={Content.contentImageCover}></img>
+          </div>
             <div className={Content.textContent}>
             ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย
             </div>

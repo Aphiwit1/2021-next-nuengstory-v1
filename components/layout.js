@@ -23,7 +23,7 @@ export default function Layout({ children, home }) {
                     </Link>
 
                     <Link href="/" >
-                        <a className={styles.pageName}>Who's nueng</a>
+                        <a className={styles.pageName}>About nueng</a>
                     </Link>
                 </div>
             </header>

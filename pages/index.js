@@ -3,6 +3,7 @@ import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import styles from "../components/layout.module.css";
 import Link from "next/link";
+import ElementCenter from '../public/element_center.png'
 
 //home page
 export default function Home({ blogList }) {
@@ -22,7 +23,7 @@ export default function Home({ blogList }) {
             <a>
               <div className={styles.blogContainer}>
                 <div className={styles.blogImage}>
-                    <Image  alt="title logo" className={styles.imageCover} src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"/>
+                    <Image  alt="title logo" className={styles.imageCover} src={ElementCenter}/>
                 </div>
                 <div className={styles.blogDetail}>
                   <div className={styles.title}>

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Content from "./content.module.css";
 import Code from "../../styles/Code";
 import Image from 'next/image'
+import ElementCenter from '../../public/element_center.png'
 
 export default function Test() {
     const cssOriginal = `.center-element { 
@@ -56,7 +57,7 @@ export default function Test() {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta property="og:title" content="CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์" key="title" />
           <meta property="og:description" content="ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย" key="ogdesc" />
-          <meta property="og:image" content="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0" key="ogimage" />
+          <meta property="og:image" content={ElementCenter} key="ogimage" />
         </Head>
         {/* content */}
         <div className={Content.blogContentContainer}>
@@ -68,12 +69,12 @@ export default function Test() {
 
           <div className={Content.imageCoverContainer}>
           {/* <Image alt="blog cover" className={Content.contentImageCover} layout="fill" src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"  /> */}
-          {/* <Image
-        src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"
+          <Image
+        src={ElementCenter}
         alt="Landscape picture"
         width={500}
         height={500}
-      /> */}
+      />
           </div>
             <div className={Content.textContent}>
             ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย

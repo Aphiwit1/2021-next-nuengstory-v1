@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500;700&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300&display=swap');
 
 .mb10 {
     margin-bottom: 10px;
@@ -45,6 +45,8 @@
     margin-top: 0.5em;
     margin-bottom: 1em;
     line-height: 1.7;
+    font-family: 'Sarabun', sans-serif;
+
 }
 
 .textTopic {

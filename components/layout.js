@@ -2,6 +2,7 @@ import styles from "./layout.module.css";
 import Link from "next/link";
 import  { useRouter } from 'next/router';
 
+
 const name = "Your Name";
 export const siteTitle = "nuengStory | blog";
 
@@ -11,7 +12,10 @@ export default function Layout({ children, home }) {
         console.log("router : ", router)
 
     return (
+
+
         <div className={styles.container}>
+            
             {/* Header bar */}
             <header className={styles.header}>
                 <div className={styles.headerLeft}><span className={styles.logoFirstWord}>nueng</span><span className={styles.logoSecondWord}>Story</span></div>
@@ -24,16 +28,16 @@ export default function Layout({ children, home }) {
                     
                     
 
-                    <Link href="/me" >
+                    {/* <Link href="/me" >
                         <a className={router.pathname == "/me"? styles['active'] : styles['pageName']}>about me</a>
-                    </Link>
+                    </Link> */}
                 </div>
             </header>
 
 
             {/* Content each page */}
             <main className={styles.body}>
-         
+                
                 {children}
             </main>
 
@@ -47,7 +51,7 @@ export default function Layout({ children, home }) {
             )} */}
 
             <footer className={styles.footer}>
-                <div className={styles.socialContact}>XXXX</div>
+                {/* <div className={styles.socialContact}>XXXX</div> */}
                 <div className={styles.credit}>Created by @aphiwit</div>
             </footer>
 

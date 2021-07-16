@@ -19,7 +19,7 @@ export default function Home({ blogList }) {
 
 
         <div className={styles.flexContainer}>
-          <Link href="posts/test">
+          <Link href="posts/blog-1-element-center">
             <a>
               <div className={styles.blogContainer}>
                 <div className={styles.blogImage}>

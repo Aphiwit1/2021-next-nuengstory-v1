@@ -80,6 +80,16 @@
 .Code {
     font-size: 14px;
 }
+
+.Highlight {
+    border: 1px solid #dedede;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #FF8900;
+    margin: 0px 10px;
+}
+
 @media only screen and (max-width: 1280px) {
     .blogContentContainer {
         padding: 0px 10%;
@@ -96,11 +106,16 @@
     }
 
     .textHeader {
-        font-size: 28px;
+        font-size: 24px;
     }
 
-    .textContent,
-    .textTopic {
+    .textContent
+    {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .textTopic   {
         font-size: 20px;
         line-height: 1.7;
     }

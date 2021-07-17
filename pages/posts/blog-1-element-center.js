@@ -85,7 +85,7 @@ export default function Test() {
             <div className={Content.textContent}>
               <Code code={cssOriginal} language="css" />
             </div>
-            <div className={Content.textContent}> ผลลัพท์ในตอนแรก </div>
+            <div className={Content.textContent}>ผลลัพท์ในตอนแรก</div>
             <div className={Content.textContent}>
               <div className={Content.centerElement}>
                 <span> HelloWorld </span>
@@ -98,9 +98,9 @@ export default function Test() {
               </div>
             </div>
             <div className={Content.textContent}>
-            จะสังเหตุว่าคำว่า HelloWorld นั้น มี <strong>ผลลัพท์ในตอนแรก</strong> 
+            จะสังเหตุว่าคำว่า HelloWorld นั้นมี <strong className={Content.Highlight}>ผลลัพท์ในตอนแรก</strong> 
            แสดงอยู่ที่มุมบนซ้ายของกล่อง แล้วถ้าเราอยากจะให้
-          ย้ายมาอยู่ตรงกลางของกล่องแบบ <strong>ผลลัพท์ที่คาดหวัง</strong> จะต้องทำอย่างไร
+          ย้ายมาอยู่ตรงกลางของกล่องแบบ<strong className={Content.Highlight}>ผลลัพท์ที่คาดหวัง</strong>จะต้องทำอย่างไร
           มีวิธีอยู่หลายวิธีครับ มาติดตามกันเลย
             </div>
             <div className={Content.textTopic}> 1. ใช้ display:flex </div>
@@ -113,11 +113,11 @@ export default function Test() {
                 -กำหนด css ของกล่องให้เป็น display:flex
               </div>
               <div className={Content.mb10}>
-              - ใช้ justify-content ให้เป็น center
+              - ใช้<strong className={Content.Highlight}>justify-content: center;</strong>
             เพื่อกำหนดให้อยู่ตรงกลางในแนวนอน
               </div>
               <div>
-              - ใช้ align-items เป็น center เพื่อกำหนดให้อยู่ตรงกลางในแนวตั้ง
+              - ใช้<strong className={Content.Highlight}>align-items: center;</strong>เพื่อกำหนดให้อยู่ตรงกลางในแนวตั้ง
               </div>
             </div>
             <div className={Content.textTopic}>
@@ -129,11 +129,11 @@ export default function Test() {
             <div className={Content.textContent}>
               <div className={Content.mb10}> - comment height ของกล่องออกไปก่อน</div>
               <div className={Content.mb10}>
-              - กำหนด padding ด้านบน-ล่าง เท่ากับ 50px และ ซ้าย-ขวา เท่ากับ 0px
+              - กำหนด<strong className={Content.Highlight}>padding: 50px 0px;</strong>
             เพื่อให้คำอยู่ตรงกลางในแนวตั้ง **แต่คำยังชิดซ้ายในแนวนอนอยู่**
               </div>
               <div>
-              - ใช้ text-align เท่ากับ center เข้ามาช่วยให้คำอยู่ตรงกลางในแนวนอน
+              - ใช้ <strong className={Content.Highlight}>text-align:center;</strong>เข้ามาช่วยให้คำอยู่ตรงกลางในแนวนอน
               </div>
             </div>
             <div className={Content.textTopic}>
@@ -145,16 +145,16 @@ export default function Test() {
             </div>
             <div className={Content["textContent"] + " " + Content["pb50"]}>
               <div className={Content.mb10}>
-              - สำหรับ class center-element ให้กำหนด position เท่ากับ relative
+              - สำหรับ<strong className={Content.Highlight}>.center-element</strong>ให้กำหนด<strong className={Content.Highlight}>position: relative;</strong>
               </div>
               <div className={Content.mb10}>
-              - สำหรับ span ที่อยู่ใน class center-element ในที่นี้หมายถึงคำว่า
-            HelloWorld ให้กำหนด position เท่ากับ absolute
+              - สำหรับ<strong className={Content.Highlight}>span</strong>ที่อยู่ใน<strong className={Content.Highlight}>.center-element</strong>ในที่นี้หมายถึงคำว่า
+            HelloWorld ให้กำหนด<strong className={Content.Highlight}>position: absolute;</strong>
             เพื่อให้มันสามารถย้ายตำแหน่งโลดแล่นไปตรงไหนก็ได้ภายในกล่อง (scope
             ที่ถูกกำหนดโดยใช้ position: relative)
               </div>
               <div className={Content.mb10}>
-              - กำหนด top และ left เท่ากับ 50%
+              - กำหนด<strong className={Content.Highlight}>top: 50%;</strong>และ<strong className={Content.Highlight}>left: 50%;</strong> 
             ผลลัพท์จะสังเหตุว่าย้ายตำแหน่งแล้วแต่ก็ยังไม่ใช่กึ่งกลาง
             เหตุเพราะตัวคำว่า Helloworld ก็มีความยาวและความสูง
               </div>

@@ -98,9 +98,9 @@ export default function Test() {
               </div>
             </div>
             <div className={Content.textContent}>
-            จะสังเหตุว่าคำว่า HelloWorld นั้นมี <strong className={Content.Highlight}>ผลลัพท์ในตอนแรก</strong> 
+            จะสังเหตุว่าคำว่า HelloWorld นั้นมี <strong className={Content.wordHighlight}>ผลลัพท์ในตอนแรก</strong> 
            แสดงอยู่ที่มุมบนซ้ายของกล่อง แล้วถ้าเราอยากจะให้
-          ย้ายมาอยู่ตรงกลางของกล่องแบบ<strong className={Content.Highlight}>ผลลัพท์ที่คาดหวัง</strong>จะต้องทำอย่างไร
+          ย้ายมาอยู่ตรงกลางของกล่องแบบ<strong className={Content.wordHighlight}>ผลลัพท์ที่คาดหวัง</strong>จะต้องทำอย่างไร
           มีวิธีอยู่หลายวิธีครับ มาติดตามกันเลย
             </div>
             <div className={Content.textTopic}> 1. ใช้ display:flex </div>

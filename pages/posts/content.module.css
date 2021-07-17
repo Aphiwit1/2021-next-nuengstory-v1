@@ -91,6 +91,12 @@
     font-family: 'Sarabun', sans-serif;
 }
 
+.wordHighlight {
+    color: #1d1d1d;
+    margin: 0px 10px;
+    font-family: 'Sarabun', sans-serif;
+}
+
 @media only screen and (max-width: 1280px) {
     .blogContentContainer {
         padding: 0px 10%;

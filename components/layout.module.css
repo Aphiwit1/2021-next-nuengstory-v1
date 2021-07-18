@@ -89,7 +89,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #f5f5f57a;
-  height: 100vh;
+  height: 85vh;
   font-family: 'Kanit', sans-serif;
 }
 
@@ -166,7 +166,7 @@
 
 .footer {
   background-color: white;
-  height: 200px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

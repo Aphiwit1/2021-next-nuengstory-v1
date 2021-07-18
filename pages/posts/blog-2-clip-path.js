@@ -3,12 +3,13 @@ import Head from "next/head";
 import Content from "./content.module.css";
 import Blog2 from "./blog2.module.css";
 import Code from "../../styles/Code";
+import ClipPathCover from "../../public/Clippath.png";
 import Image from "next/image";
 import ClipPathWebsite from "../../public/clip-path-website.jpg";
 
 export default function ClipPath() {
   const cssOriginal = `.custom-clip-path { 
-    background-color: #04ca2f;
+    background-color: #50E190;
     height: 100px;
     width: 200px;
     margin: auto;
@@ -64,7 +65,7 @@ export default function ClipPath() {
           {/* <meta property="og:description" content="ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย" key="ogdesc" /> */}
           <meta
             property="og:image"
-            content="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"
+            content="https://dl.dropboxusercontent.com/s/8ciy7sc5kd9ifwd/Clippath.png?dl=0"
             key="ogimage"
           />
         </Head>
@@ -74,6 +75,16 @@ export default function ClipPath() {
             <div className={Content.textHeader}>
               CSS: กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path
             </div>
+
+            <div className={Content.imageCoverContainer}>
+          {/* <Image alt="blog cover" className={Content.contentImageCover} layout="fill" src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"  /> */}
+          <Image
+        src={ClipPathCover}
+        alt="Element-center"
+        width={500}
+        height={500}
+      />
+          </div>
 
             <div className={Content.textContent}>
               <strong className={Content.Highlight}>Clip-path</strong>เป็น css

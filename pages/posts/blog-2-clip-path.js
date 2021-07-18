@@ -58,7 +58,7 @@ export default function ClipPath() {
           />
           <meta
             property="og:title"
-            content="CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์"
+            content="กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path"
             key="title"
           />
           {/* <meta property="og:description" content="ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย" key="ogdesc" /> */}

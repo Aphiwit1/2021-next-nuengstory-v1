@@ -56,7 +56,7 @@ export default function Test() {
           <title>nuengStory | CSS Trick: Element in center</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta property="og:title" content="CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์" key="title" />
-          <meta property="og:description" content="ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย" key="ogdesc" />
+          {/* <meta property="og:description" content="ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย" key="ogdesc" /> */}
           <meta property="og:image" content="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0" key="ogimage" />
         </Head>
         {/* content */}

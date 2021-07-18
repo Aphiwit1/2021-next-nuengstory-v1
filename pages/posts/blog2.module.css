@@ -1,0 +1,64 @@
+.OriginalCode {
+    background-color: #04ca2f;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Inset {
+    background-color: #04ca2f;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    clip-path: inset(70px 40px 70px 40px);
+}
+
+.InsetWithRound {
+    background-color: #04ca2f;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    clip-path: inset(70px 40px 70px 40px round 20px);
+}
+
+.Circle {
+    background-color: #04ca2f;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    clip-path: circle();
+}
+
+.CircleWithAt {
+    background-color: #04ca2f;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    clip-path: circle(80px at 100px 50px);
+}
+
+.Polygon {
+    background-color: #04ca2f;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    clip-path: polygon(50% 0, 50% 0,100% 100%, 0 100%);
+}

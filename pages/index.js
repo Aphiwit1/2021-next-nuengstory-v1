@@ -36,21 +36,22 @@ export default function Home({ blogList }) {
             </a>
           </Link>
 
-          {/* <Link href="posts/blog-1-element-center">
+        
+          <Link href="posts/blog-2-clip-path">
             <a>
               <div className={styles.blogContainer}>
-                <div className={styles.blogImage}>tttt</div>
+                <div className={styles.blogImage}>
+                    <Image  alt="title logo" className={styles.imageCover} src={ElementCenter}/>
+                </div>
                 <div className={styles.blogDetail}>
                   <div className={styles.title}>
-                    #CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์
+                  #CSS: กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path
               </div>
                   <div className={styles.titleDate}>31/05/64</div>
-                  <div className={styles.createdBy}>Created by Aphiwit</div>
                 </div>
               </div>
             </a>
-          </Link> */}
-
+          </Link>
 
 
 

@@ -4,7 +4,7 @@ import Content from "./content.module.css";
 import Blog2 from "./blog2.module.css";
 import Code from "../../styles/Code";
 import Image from "next/image";
-import ElementCenter from "../../public/element_center.png";
+import ClipPathWebsite from "../../public/clip-path-website.jpg";
 
 export default function ClipPath() {
   const cssOriginal = `.custom-clip-path { 
@@ -37,11 +37,15 @@ export default function ClipPath() {
     clip-path: circle(80px at 100px 50px);
 }`;
 
-const polygon = `.custom-clip-path { 
+  const ellipse = `.custom-clip-path { 
+    // code ที่เพิ่มเข้ามา
+    clip-path: ellipse(100px 50px);
+}`;
+
+  const polygon = `.custom-clip-path { 
     // code ที่เพิ่มเข้ามา
     clip-path: polygon(50% 0, 50% 0,100% 100%, 0 100%);
 }`;
-
 
   return (
     <Layout>
@@ -179,18 +183,76 @@ const polygon = `.custom-clip-path {
             </div>
 
             {/* 3 */}
+            <div className={Content.textTopic}>Clip-path: ellipse()</div>
+            <div className={Content.textContent}>
+              เราสามารถกำหนดความกว้างและความสูงของ element
+              ได้เพื่อให้ผลลัพท์ออกมาเป็นรูปวงรี
+              <Code className={Content.Code} code={ellipse} language="css" />
+              <div className={Blog2.Ellipse}>
+                <div>ไล่แล้ว ออกไป!</div>
+              </div>
+            </div>
+            <div className={Content.textContent}>
+                อธิบายได้ว่า
+                <ul>
+                    <li>กำหนดวงรี ให้ความกว้างเท่ากับ 100px;</li>
+                    <li>กำหนดวงรี ให้ความสูงเท่ากับ 50px;</li>
+                </ul>
+            </div>
+
+            {/* 4 */}
             <div className={Content.textTopic}>Clip-path: polygon()</div>
             <div className={Content.textContent}>
-            กำหนดรูปทรงแบบตามใจชอบ หรือจะกำหนดเป็นหลายเหลี่ยมก็ได้
-            <Code
-                className={Content.Code}
-                code={polygon}
-                language="css"
-              />
+              กำหนดรูปทรงแบบตามใจชอบ หรือจะกำหนดเป็นหลายเหลี่ยมก็ได้
+              <Code className={Content.Code} code={polygon} language="css" />
               <div className={Blog2.Polygon}>
                 <div>ไล่แล้ว ออกไป!</div>
               </div>
             </div>
+            <div className={Content.textContent}>
+              อธิบายได้ว่า
+              <ul>
+                <li>
+                  เนื่องจากรูปตั้งต้นเป็นสี่เหลี่ยมก็จะมีจุดมุมอยู่ 4 จุด บนซ้าย
+                  บนขวา ล่างซ้าย ล่างขวา จะยึดลำดับตามนี้เมื่อใส่ค่าลงไป
+                </li>
+                <li>
+                  มุมบนซ้าย (50% 0) หมายความว่า เลื่อนแกน x มา 50% (ซ้าย -> ขวา)
+                  และ เลื่อนแกน y 0% (บน -> ล่าง)
+                </li>
+                <li>
+                  มุมบนขวา (50% 0) หมายความว่า เลื่อนแกน x มา 50% (ซ้าย -> ขวา)
+                  และ เลื่อนแกน y 0% (บน -> ล่าง)
+                </li>
+                <li>
+                  มุมล่างขวา (100% 100%) หมายความว่า เลื่อนแกน x มา 100% (ซ้าย
+                  -> ขวา) และ เลื่อนแกน y 100% (บน -> ล่าง)
+                </li>
+                <li>
+                  มุมล่างขวา (100% 100%) หมายความว่า เลื่อนแกน x มา 100% (ซ้าย
+                  -> ขวา) และ เลื่อนแกน y 100% (บน -> ล่าง)
+                </li>
+              </ul>
+            </div>
+
+            <div className={Content.textContent}>
+                ถ้าต้องการให้ element มีรูปร่าง shape 9k,ตามใจนึกที่ซับซ้อนมากขึ้น ก็จะยิ่งปวดหัวตรงช่อง value ที่ใส่ไป
+                แต่อย่างไรก็ตาม ปัญหานั้นจะหมดไป (ไม่ได้ขายตรง!!)  มีเว็บมาแนะนำชื่อว่า 
+            <a  className={Content.LinkTag}  href="https://bennettfeely.com/clippy">bennettfeely.com/clipp</a>เราสามารถเข้าไปเลือก clip-path แบบที่เราต้องการได้เลย
+            </div>
+
+            <div className={Content["textContent"] + " " + Content["pb50"]}>
+            <div>
+            <strong>ข้อมูลอ้างอิงจาก:</strong> https://ishadeed.com/article/clip-path/
+            </div>
+            <div>
+            <strong>ข้อมูลอ้างอิงจาก:</strong>  https://www.w3schools.com/cssref/css3_pr_clip-path.asp 
+            </div>
+            
+            
+            </div>
+          
+          
           </div>
         </div>
       </>

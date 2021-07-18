@@ -97,6 +97,12 @@
     font-family: 'Sarabun', sans-serif;
 }
 
+.LinkTag {
+    border-bottom: 2px solid #4056ff;
+    color: #4056ff;
+    margin: 0px 10px;
+}
+
 @media only screen and (max-width: 1280px) {
     .blogContentContainer {
         padding: 0px 10%;

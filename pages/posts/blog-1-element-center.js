@@ -71,7 +71,7 @@ export default function Test() {
           {/* <Image alt="blog cover" className={Content.contentImageCover} layout="fill" src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"  /> */}
           <Image
         src={ElementCenter}
-        alt="Landscape picture"
+        alt="Element-center"
         width={500}
         height={500}
       />

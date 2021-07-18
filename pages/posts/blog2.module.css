@@ -62,3 +62,15 @@
     display: flex;
     clip-path: polygon(50% 0, 50% 0,100% 100%, 0 100%);
 }
+
+
+.Ellipse {
+    background-color: #04ca2f;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    clip-path: ellipse(100px 50px);
+}

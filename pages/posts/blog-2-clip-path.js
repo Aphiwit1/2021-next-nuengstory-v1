@@ -65,7 +65,7 @@ export default function ClipPath() {
           {/* <meta property="og:description" content="ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย" key="ogdesc" /> */}
           <meta
             property="og:image"
-            content="https://dl.dropboxusercontent.com/s/8ciy7sc5kd9ifwd/Clippath.png?dl=0"
+            content="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"
             key="ogimage"
           />
         </Head>
@@ -131,7 +131,7 @@ export default function ClipPath() {
             </div>
 
             <div className={Content.textContent}>
-              อธิบายได้ว่า มีการกำหนด{" "}
+              อธิบายได้ว่า มีการกำหนด
               <strong className={Content.Highlight}>
                 clip-path: inset(บน=70px ขวา=40px ล่าง=70px ซ้าย=40px);
               </strong>
@@ -228,20 +228,20 @@ export default function ClipPath() {
                   บนขวา ล่างซ้าย ล่างขวา จะยึดลำดับตามนี้เมื่อใส่ค่าลงไป
                 </li>
                 <li>
-                  มุมบนซ้าย (50% 0) หมายความว่า เลื่อนแกน x มา 50% (ซ้าย -> ขวา)
-                  และ เลื่อนแกน y 0% (บน -> ล่าง)
+                  มุมบนซ้าย (50% 0) หมายความว่า เลื่อนแกน x มา 50% (ซ้าย to ขวา)
+                  และ เลื่อนแกน y 0% (บน to ล่าง)
                 </li>
                 <li>
-                  มุมบนขวา (50% 0) หมายความว่า เลื่อนแกน x มา 50% (ซ้าย -> ขวา)
-                  และ เลื่อนแกน y 0% (บน -> ล่าง)
-                </li>
-                <li>
-                  มุมล่างขวา (100% 100%) หมายความว่า เลื่อนแกน x มา 100% (ซ้าย
-                  -> ขวา) และ เลื่อนแกน y 100% (บน -> ล่าง)
+                  มุมบนขวา (50% 0) หมายความว่า เลื่อนแกน x มา 50% (ซ้าย to ขวา)
+                  และ เลื่อนแกน y 0% (บน to ล่าง)
                 </li>
                 <li>
                   มุมล่างขวา (100% 100%) หมายความว่า เลื่อนแกน x มา 100% (ซ้าย
-                  -> ขวา) และ เลื่อนแกน y 100% (บน -> ล่าง)
+                  to ขวา) และ เลื่อนแกน y 100% (บน to ล่าง)
+                </li>
+                <li>
+                  มุมล่างขวา (100% 100%) หมายความว่า เลื่อนแกน x มา 100% (ซ้าย
+                  to ขวา) และ เลื่อนแกน y 100% (บน to ล่าง)
                 </li>
               </ul>
             </div>

@@ -5,6 +5,9 @@ import  { useRouter } from 'next/router';
 
 const name = "Your Name";
 export const siteTitle = "nuengStory | blog";
+const myCaptionPath1 = "เปรียบ BUG เหมือนเม็ดทราย (มันเล็กนิดเดียวเหรอ?)"
+const myCaptionPath2 = "เปล่าเลย มันเยอะมาก และนับไม่ถ้วน"
+const myCaptionPath3 = "-- หนึ่ง เจ้าของเว็บไซต์ nuengStory --"
 
 // layout คือ element ที่ใช้ทุกหน้า เช่น header content footer 
 export default function Layout({ children, home }) {
@@ -23,7 +26,7 @@ export default function Layout({ children, home }) {
                     
    
                     <Link href="/">
-                        <a className={router.pathname == "/"? styles['active'] : styles['pageName']}>Home</a>
+                        <a className={router.pathname == "/"? styles['active'] : styles['pageName']}>&#127968; Home</a>
                     </Link>
                     
                     
@@ -49,10 +52,22 @@ export default function Layout({ children, home }) {
                     </Link>
                 </div>
             )} */}
+               <div className={styles.MyCaption}>
+                    <div>{myCaptionPath1}</div>
+                    <div>{myCaptionPath2}</div>
+                    <div className={styles.nuengCaption}>
+                    {myCaptionPath3}
+                    </div>
+                </div>
 
             <footer className={styles.footer}>
                 {/* <div className={styles.socialContact}>XXXX</div> */}
-                <div className={styles.credit}>Created by @aphiwit</div>
+             
+                <div className={styles.credit}> 
+                 <div>©2021 Aphiwit</div>
+                 <div>&#128525; Made with love in Phatthalung, Thailand</div>
+                
+                </div>
             </footer>
 
 

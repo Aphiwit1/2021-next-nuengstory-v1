@@ -141,13 +141,13 @@ export default function Test() {
                 เพื่อกำหนดให้อยู่ตรงกลางในแนวตั้ง
               </div> */}
               <ul>
-                <li>กำหนด css ของกล่องให้เป็น display:flex</li>
-                <li>ใช้
+                <li className={Content.mb10}>กำหนด css ของกล่องให้เป็น display:flex</li>
+                <li className={Content.mb10}>ใช้
                 <strong className={Content.Highlight}>
                   justify-content: center;
                 </strong>
                 เพื่อกำหนดให้อยู่ตรงกลางในแนวนอน</li>
-                <li>ใช้
+                <li className={Content.mb10}>ใช้
                 <strong className={Content.Highlight}>
                   align-items: center;
                 </strong>
@@ -170,15 +170,15 @@ export default function Test() {
               - ใช้ <strong className={Content.Highlight}>text-align:center;</strong>เข้ามาช่วยให้คำอยู่ตรงกลางในแนวนอน
               </div> */}
               <ul>
-                <li>comment height ของกล่องออกไปก่อน</li>
-                <li>
+                <li className={Content.mb10}>comment height ของกล่องออกไปก่อน</li>
+                <li className={Content.mb10}>
                   กำหนด
                   <strong className={Content.Highlight}>
                     padding: 50px 0px;
                   </strong>
                   เพื่อให้คำอยู่ตรงกลางในแนวตั้ง (แต่คำยังชิดซ้ายในแนวนอนอยู่)
                 </li>
-                <li>
+                <li className={Content.mb10}>
                   ใช้
                   <strong className={Content.Highlight}>
                     text-align:center;
@@ -219,7 +219,7 @@ export default function Test() {
             และอันต่อมาคือ เลื่อนขึ้นข้างบน(แกน y) (-50%)
               </div> */}
               <ul>
-                <li>
+                <li className={Content.mb10}>
                   สำหรับ
                   <strong className={Content.Highlight}>.center-element</strong>
                   ให้กำหนด
@@ -227,7 +227,7 @@ export default function Test() {
                     position: relative;
                   </strong>
                 </li>
-                <li>
+                <li className={Content.mb10}>
                   สำหรับ<strong className={Content.Highlight}>span</strong>
                   ที่อยู่ใน
                   <strong className={Content.Highlight}>.center-element</strong>
@@ -238,13 +238,13 @@ export default function Test() {
                   เพื่อให้มันสามารถย้ายตำแหน่งโลดแล่นไปตรงไหนก็ได้ภายในกล่อง
                   (scope ที่ถูกกำหนดโดยใช้ position: relative)
                 </li>
-                <li>
+                <li className={Content.mb10}>
                   กำหนด<strong className={Content.Highlight}>top: 50%;</strong>
                   และ<strong className={Content.Highlight}>left: 50%;</strong>
                   ผลลัพท์จะสังเหตุว่าย้ายตำแหน่งแล้วแต่ก็ยังไม่ใช่กึ่งกลาง
                   เหตุเพราะตัวคำว่า Helloworld ก็มีความยาวและความสูง
                 </li>
-                <li>
+                <li className={Content.mb10}>
                   ดังนั้นจึงต้องกำหนด transform เท่ากับ translate
                   เพื่อเลื่อนตำแหน่ง มีค่าเท่ากับ (-50%)
                   อันแรกคือเลื่อนไปทางซ้าย(แกน x) (-50%) และอันต่อมาคือ

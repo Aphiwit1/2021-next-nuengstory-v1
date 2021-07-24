@@ -54,7 +54,7 @@ export default function Home({ blogList }) {
           </Link> */}
 
           { testJson.map((item, index) => {
-            return   <Link href={item.path}>
+            return   <Link href={item.path} key={item.id}>
             <a>
               <div className={styles.blogContainer}>
                 <div className={styles.blogImage}>

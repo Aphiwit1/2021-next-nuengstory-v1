@@ -3,9 +3,8 @@ import Head from "next/head";
 import Content from "./content.module.css";
 import Blog2 from "./blog2.module.css";
 import Code from "../../styles/Code";
-import ClipPathCover from "../../public/Clippath.png";
+import ClipPathCover from "../../public/imageCover/Clippath.png";
 import Image from "next/image";
-import ClipPathWebsite from "../../public/clip-path-website.jpg";
 
 export default function ClipPath() {
   const cssOriginal = `.custom-clip-path { 

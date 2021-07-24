@@ -3,8 +3,7 @@ import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import styles from "../components/layout.module.css";
 import Link from "next/link";
-import ElementCenter from '../public/element_center.png'
-import ClipPathCover from "../public/Clippath.png";
+import testJson from '../public/test.json'
 
 //home page
 export default function Home({ blogList }) {
@@ -20,7 +19,7 @@ export default function Home({ blogList }) {
 
 
         <div className={styles.flexContainer}>
-          <Link href="posts/blog-1-element-center">
+          {/* <Link href="posts/blog-1-element-center">
             <a>
               <div className={styles.blogContainer}>
                 <div className={styles.blogImage}>
@@ -52,10 +51,30 @@ export default function Home({ blogList }) {
                 </div>
               </div>
             </a>
-          </Link>
+          </Link> */}
+
+          { testJson.map((item, index) => {
+            return   <Link href={item.path}>
+            <a>
+              <div className={styles.blogContainer}>
+                <div className={styles.blogImage}>
+                    <Image  alt="title logo" width="100%" height="100%" he className={styles.imageCover} src={item.image}/>
+                </div>
+                <div className={styles.blogDetail}>
+                  <div className={styles.title}>
+                    { item.title}
+              </div>
+          <div className={styles.titleDate}>{item.date}</div>
+                  {/* <div className={styles.createdBy}>Created by Aphiwit</div> */}
+                </div>
+              </div>
+            </a>
+          </Link> 
+          })}
+ 
 
 
-    xxxx
+
         </div>
 
 

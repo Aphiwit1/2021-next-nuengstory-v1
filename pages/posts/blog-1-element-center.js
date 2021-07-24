@@ -3,7 +3,7 @@ import Head from "next/head";
 import Content from "./content.module.css";
 import Code from "../../styles/Code";
 import Image from "next/image";
-import ElementCenter from "../../public/element_center.png";
+import ElementCenter from "../../public/imageCover/element_center.png";
 
 export default function Test() {
   const cssOriginal = `.center-element { 

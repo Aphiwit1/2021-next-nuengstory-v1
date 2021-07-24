@@ -35,7 +35,7 @@ export default function Home({ blogList }) {
                 </div>
               </div>
             </a>
-          </Link>
+          </Link> 
 
         
           <Link href="posts/blog-2-clip-path">
@@ -55,7 +55,7 @@ export default function Home({ blogList }) {
           </Link>
 
 
-
+    xxxx
         </div>
 
 

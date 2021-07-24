@@ -15,7 +15,7 @@ export default function Home({ blogList }) {
 
         <Head>
           <title>{siteTitle}</title>
-          <link rel="shortcut icon" href="https://dl.dropboxusercontent.com//s/23143dc4r1kes62/N.ico?dl=0" />
+          <link rel="shortcut icon" href="https://www.dl.dropboxusercontent.com/s/kmi3gcrwapy380l/nuengLogo.ico?dl=0" />
         </Head>
 
 

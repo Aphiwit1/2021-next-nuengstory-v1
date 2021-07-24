@@ -7,7 +7,7 @@ const name = "Your Name";
 export const siteTitle = "nuengStory | blog";
 const myCaptionPath1 = "เปรียบ BUG เหมือนเม็ดทราย (มันเล็กนิดเดียวเหรอ?)"
 const myCaptionPath2 = "เปล่าเลย มันเยอะมาก และนับไม่ถ้วน"
-const myCaptionPath3 = "-- หนึ่ง เจ้าของเว็บไซต์ nuengStory --"
+const myCaptionPath3 = "-- หนึ่ง บุคคลนิรนาม --"
 
 // layout คือ element ที่ใช้ทุกหน้า เช่น header content footer 
 export default function Layout({ children, home }) {

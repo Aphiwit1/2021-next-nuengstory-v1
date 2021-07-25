@@ -54,12 +54,28 @@
     transition-property: background-color, color, width;
     transition-duration: 1s, 1s, 1s;
     transition-delay: 0s, 0s, 1s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in, ease-in, ease-in;
 }
 
 .btnClickFunction:hover {
     background-color: #2c2c2e;
-    width: 500px;
+    width: 400px;
     color: white;
     cursor: pointer
 }
+
+.btnClickShortHand {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #2c2c2e;
+    width: 100px;
+    transition: background-color 1s 0s ease-in, color 1s 0s ease-in, width 1s 1s ease-in;
+}
+
+.btnClickShortHand:hover {
+    background-color: #2c2c2e;
+    width: 400px;
+    color: white;
+    cursor: pointer
+}
+

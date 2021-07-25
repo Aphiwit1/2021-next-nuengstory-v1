@@ -1,5 +1,8 @@
 .Code{
     font-size: 14px;
+    overflow-x: scroll;
+    max-width: 90vw;
+    
 }
 
 .borderRadius20 {
@@ -8,7 +11,7 @@
 
 @media only screen and (max-width: 500px) { 
     .Code{
-        font-size: 10px;
+        font-size: 10px;    
     }
 }
 

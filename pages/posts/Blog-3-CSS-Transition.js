@@ -59,33 +59,29 @@ export default function ClipPath() {
         padding: 15px;
         border: 1px solid #2c2c2e;
         width: 100px;
+
+        // code ที่เพิ่มเข้ามา
         transition-property: background-color, color, width;
         transition-duration: 1s, 1s, 1s;
         transition-delay: 0s, 0s, 1s;
-        transition-timing-function: ease-out;
+        transition-timing-function: ease-in;
     }
     .btnClick:hover {
         background-color: #2c2c2e;
-        width: 500px;
+        width: 400px;
         color: white;
         cursor: pointer
     }`;
 
-  const circleWithAt = `.custom-clip-path { 
-    // code ที่เพิ่มเข้ามา
-    clip-path: circle(80px at 100px 50px);
-}`;
+    const transitionShortHand = `.btnClick {
+        background-color: white;
+        padding: 15px;
+        border: 1px solid #2c2c2e;
+        width: 100px;
 
-  const ellipse = `.custom-clip-path { 
-    // code ที่เพิ่มเข้ามา
-    clip-path: ellipse(100px 50px);
-}`;
-
-  const polygon = `.custom-clip-path { 
-    // code ที่เพิ่มเข้ามา
-    clip-path: polygon(50% 0, 50% 0,100% 100%, 0 100%);
-}`;
-
+        // code ที่เพิ่มเข้ามา
+        transition: background-color 1s 0s ease-in, color 1s 0s ease-in, width 1s 1s ease-in;
+    }`;
   return (
     <Layout>
       <>
@@ -279,7 +275,7 @@ export default function ClipPath() {
               มาดูผลลัพท์กัน
             </div>
             <div className={Content.textContent}>
-              เพื่อความเห็นภาพที่ง่ายขึ้น ขอขยายความจากจาก 300px เป็น 500px
+              เพื่อความเห็นภาพที่ง่ายขึ้น ขอขยายความจากจาก 300px เป็น 400px
               เมื่อเกิดการ hover ที่ปุ่ม
             </div>
 
@@ -296,12 +292,36 @@ export default function ClipPath() {
             <div className={Content.textContent}>
                 อธิยายได้ว่า
                 <ul>
-                    <li>มีการเพิ่ม transition-timing-function และกำหนด value เป็น ease-out</li>
-                    <li>ease-out คือ การสั่งให้เริ่มแบบช้าๆ และความเร็วค่อยๆเพิ่มขึ้น</li>
+                    <li>มีการเพิ่ม transition-timing-function และกำหนด value เป็น ease-in</li> 
                 </ul>
             </div>
 
-            <div className={Content["textContent"] + " " + Content["pb50"]}>
+            <div className={Content.textContent}>
+                ขออธิบายเพิ่มเติมเกี่ยวกับ value แต่ละแบบของ transition-timing-function
+                <ul>
+                <li>ease-out คือ การสั่งให้เริ่มแบบไวๆ และความเร็วค่อยๆลดลง</li>
+                <li>ease-in คือ การสั่งให้เริ่มแบบช้าๆ และความเร็วค่อยๆเพิ่มขึ้น</li>
+                <li>ease-in-out คือ การสั่งให้เริ่มแบบช้าๆ ความเร็วค่อยๆเพิ่มขึ้น และผลสุดท้ายค่อยๆลดลง</li>
+                <li>linear คือ การสั่งให้ความเร็วเท่าๆกัน</li>
+                </ul>
+            </div>
+
+              {/* 3 */}
+              <div className={Content.textTopic}>5. transition shorthand รวมทุก property ไว้ในบรรทัดเดียว</div>
+
+              <div className={Content.textContent}>
+              <strong className={Content.Highlight}>  transition: property | duration | timing-function | delay </strong>
+              </div>
+
+              <div className={Content.textContent}>
+              transition: background-color 1s 0s ease-in,
+                          color 1s 0s ease-in,
+                          width 1s 1s ease-in;
+              </div>
+             
+          
+
+            <div className={Content["textContent"] + " " + Content["pt50"]}>
               <div>
                 <strong>ข้อมูลอ้างอิงจาก:</strong>{" "}
                 https://ishadeed.com/article/clip-path/

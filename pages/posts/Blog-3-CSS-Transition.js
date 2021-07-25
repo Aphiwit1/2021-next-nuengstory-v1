@@ -116,7 +116,7 @@ export default function ClipPath() {
                 language="css"
               />
               <div>ผลลัพท์</div>
-             <button class={Blog3.btnClick}>
+             <button className={Blog3.btnClick}>
                     ลองกดดูสิ!
               </button> 
             </div>
@@ -148,6 +148,7 @@ export default function ClipPath() {
                 ผลลัพท์จะยังไม่มีอะไรเปลี่ยนแปลงเพราะ เป็นแค่การกำหนด propterty ให้ transition ที่ต้องการจะให้เกิดการเปลี่ยนแปลงเฉยๆ สิ่งที่จะช่วยให้เกิดการ smooth คือ
             </div>
 
+            {/* 2*/}
             <div className={Content.textTopic}>2. transition-duration</div>
 
             <div className={Content.textContent}>
@@ -157,7 +158,7 @@ export default function ClipPath() {
             <div className={Content.textContent}>
               <Code className={Content.Code} code={transitionDuration} language="css" />
               <div>ผลลัพท์</div>
-             <button class={Blog3.btnClickDuration}>
+             <button className={Blog3.btnClickDuration}>
                     ลองกดดูสิ!
               </button> 
             </div>
@@ -173,96 +174,20 @@ export default function ClipPath() {
              
             </div>
 
-            {/* 2 */}
-            <div className={Content.textTopic}>Clip-path: circle()</div>
-            <div className={Content.textContent}>
-              เป็นการกำหนด clip-path ให้เป็นวงกลม
-              <Code className={Content.Code} code={circle} language="css" />
-              <div className={Blog2.Circle}>
-                <div>ไล่แล้ว ออกไป!</div>
-              </div>
-            </div>
+           
 
-            <div className={Content.textContent}>
-              แต่เราสามารถกำหนดคุณสมบัติเพิ่มเติมได้
-              <Code
-                className={Content.Code}
-                code={circleWithAt}
-                language="css"
-              />
-              <div className={Blog2.CircleWithAt}>
-                <div>ไล่แล้ว ออกไป!</div>
-              </div>
-              อธิยายได้ว่า
-              <ul>
-                <li>มีการกำหนด clip-path ให้เป็นวงกลมให้มีขนาด 80px</li>
-                <li>
-                  ส่วนหลัง at …คือให้กำหนดตำแหน่งวงกลมโดย default
-                  จะมีตำแหน่งเริ่มต้นอยู่ที่ 0 0 หรือ มุมบนซ้าย
-                </li>
-                <li>ห่างจากตำแหน่งแกน x มา 100px </li>
-                <li>ห่างจากตำแหน่งแกน y มา 50px </li>
-              </ul>
-            </div>
+          
 
             {/* 3 */}
-            <div className={Content.textTopic}>Clip-path: ellipse()</div>
-            <div className={Content.textContent}>
-              เราสามารถกำหนดความกว้างและความสูงของ element
-              ได้เพื่อให้ผลลัพท์ออกมาเป็นรูปวงรี
-              <Code className={Content.Code} code={ellipse} language="css" />
-              <div className={Blog2.Ellipse}>
-                <div>ไล่แล้ว ออกไป!</div>
-              </div>
-            </div>
-            <div className={Content.textContent}>
-                อธิบายได้ว่า
-                <ul>
-                    <li>กำหนดวงรี ให้ความกว้างเท่ากับ 100px;</li>
-                    <li>กำหนดวงรี ให้ความสูงเท่ากับ 50px;</li>
-                </ul>
-            </div>
-
+          
+            
+           
             {/* 4 */}
-            <div className={Content.textTopic}>Clip-path: polygon()</div>
-            <div className={Content.textContent}>
-              กำหนดรูปทรงแบบตามใจชอบ หรือจะกำหนดเป็นหลายเหลี่ยมก็ได้
-              <Code className={Content.Code} code={polygon} language="css" />
-              <div className={Blog2.Polygon}>
-                <div>ไล่แล้ว ออกไป!</div>
-              </div>
-            </div>
-            <div className={Content.textContent}>
-              อธิบายได้ว่า
-              <ul>
-                <li>
-                  เนื่องจากรูปตั้งต้นเป็นสี่เหลี่ยมก็จะมีจุดมุมอยู่ 4 จุด บนซ้าย
-                  บนขวา ล่างซ้าย ล่างขวา จะยึดลำดับตามนี้เมื่อใส่ค่าลงไป
-                </li>
-                <li>
-                  มุมบนซ้าย (50% 0) หมายความว่า เลื่อนแกน x มา 50% (ซ้าย to ขวา)
-                  และ เลื่อนแกน y 0% (บน to ล่าง)
-                </li>
-                <li>
-                  มุมบนขวา (50% 0) หมายความว่า เลื่อนแกน x มา 50% (ซ้าย to ขวา)
-                  และ เลื่อนแกน y 0% (บน to ล่าง)
-                </li>
-                <li>
-                  มุมล่างขวา (100% 100%) หมายความว่า เลื่อนแกน x มา 100% (ซ้าย
-                  to ขวา) และ เลื่อนแกน y 100% (บน to ล่าง)
-                </li>
-                <li>
-                  มุมล่างขวา (100% 100%) หมายความว่า เลื่อนแกน x มา 100% (ซ้าย
-                  to ขวา) และ เลื่อนแกน y 100% (บน to ล่าง)
-                </li>
-              </ul>
-            </div>
+            
+           
+           
 
-            <div className={Content.textContent}>
-                ถ้าต้องการให้ element มีรูปร่าง shape 9k,ตามใจนึกที่ซับซ้อนมากขึ้น ก็จะยิ่งปวดหัวตรงช่อง value ที่ใส่ไป
-                แต่อย่างไรก็ตาม ปัญหานั้นจะหมดไป (ไม่ได้ขายตรง!!)  มีเว็บมาแนะนำชื่อว่า 
-            <a  className={Content.LinkTag}  href="https://bennettfeely.com/clippy">bennettfeely.com/clipp</a>เราสามารถเข้าไปเลือก clip-path แบบที่เราต้องการได้เลย
-            </div>
+         
 
             <div className={Content["textContent"] + " " + Content["pb50"]}>
             <div>

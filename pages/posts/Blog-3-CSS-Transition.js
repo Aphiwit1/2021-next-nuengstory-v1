@@ -42,15 +42,34 @@ export default function ClipPath() {
     transition-duration: 1s, 1s, 1s; 
   }`;
 
-  const insetWithRound = `.custom-clip-path { 
-    // code ที่เพิ่มเข้ามา
-    clip-path: inset(70px 40px 70px 40px round 20px);
-}`;
+  const transitionDelay = `.btnClick {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #2c2c2e;
+    width: 100px;
 
-  const circle = `.custom-clip-path { 
     // code ที่เพิ่มเข้ามา
-    clip-path: circle();
-}`;
+    transition-property: background-color, color, width;
+    transition-duration: 1s, 1s, 1s; 
+    transition-delay: 0s, 0s, 1s;
+  }`;
+
+  const transitionFunction = `.btnClick {
+        background-color: white;
+        padding: 15px;
+        border: 1px solid #2c2c2e;
+        width: 100px;
+        transition-property: background-color, color, width;
+        transition-duration: 1s, 1s, 1s;
+        transition-delay: 0s, 0s, 1s;
+        transition-timing-function: ease-out;
+    }
+    .btnClick:hover {
+        background-color: #2c2c2e;
+        width: 500px;
+        color: white;
+        cursor: pointer
+    }`;
 
   const circleWithAt = `.custom-clip-path { 
     // code ที่เพิ่มเข้ามา
@@ -92,21 +111,25 @@ export default function ClipPath() {
         <div className={Content.blogContentContainer}>
           <div>
             <div className={Content.textHeader}>
-            Control Animation ได้ง่ายๆ ด้วย CSS Transition
+              Control Animation ได้ง่ายๆ ด้วย CSS Transition
             </div>
 
             <div className={Content.imageCoverContainer}>
-          {/* <Image alt="blog cover" className={Content.contentImageCover} layout="fill" src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"  /> */}
-          <Image
-        src={ClipPathCover}
-        alt="Element-center"
-        width={500}
-        height={500}
-      />
-          </div>
+              {/* <Image alt="blog cover" className={Content.contentImageCover} layout="fill" src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"  /> */}
+              <Image
+                src={ClipPathCover}
+                alt="Element-center"
+                width={500}
+                height={500}
+              />
+            </div>
 
             <div className={Content.textContent}>
-             เริ่มแรกผมขอเกลิ่นโดยการสร้างปุ่มขึ้นมาก่อน หลังจากนั้นก็จะใส่ style ให้ปุ่มเพื่อให้ดูสวยงามขึ้น ไม่หมดแค่นั้นเพื่อให้เป็นมิตรกับผู้ใช้ขณะ mouseover  ผมก็เพิ่มลูกเล่นโดยการเปลี่ยน background และ เปลี่ยนสีของปุ่มเข้าไป  ก็จะได้ตามภาพด้านล่าง
+              เริ่มแรกผมขอเกลิ่นโดยการสร้างปุ่มขึ้นมาก่อน หลังจากนั้นก็จะใส่
+              style ให้ปุ่มเพื่อให้ดูสวยงามขึ้น
+              ไม่หมดแค่นั้นเพื่อให้เป็นมิตรกับผู้ใช้ขณะ mouseover
+               ผมก็เพิ่มลูกเล่นโดยการเปลี่ยน background และ
+              เปลี่ยนสีของปุ่มเข้าไป ก็จะได้ตามภาพด้านล่าง
             </div>
 
             <div className={Content.textContent}>
@@ -116,91 +139,178 @@ export default function ClipPath() {
                 language="css"
               />
               <div>ผลลัพท์</div>
-             <button className={Blog3.btnClick}>
-                    ลองกดดูสิ!
-              </button> 
+              <button className={Blog3.btnClick}>ลองกดดูสิ!</button>
             </div>
 
             <div className={Content.textContent}>
-               จะสังเกตุได้ว่าตอนเอา mouse ไป hover  นั้น ปุ่มจะเปลียนขนาดความกว้างจากเดิม 100px เป็น 300px จะเปลี่นนแบบกระทันหัน! ไม่มีความ smooth เลย  ฉันต้องการความ Smooth  
-               ดังนั้น จึงต้องใช้ CSS property ที่ชื่อว่า transition เข้ามาช่วยในเรื่องนี้
+              จะสังเกตุได้ว่าตอนเอา mouse ไป hover  นั้น
+              ปุ่มจะเปลียนขนาดความกว้างจากเดิม 100px เป็น 300px
+              จะเปลี่นนแบบกระทันหัน! ไม่มีความ smooth เลย ฉันต้องการความ Smooth
+              ดังนั้น จึงต้องใช้ CSS property ที่ชื่อว่า transition
+              เข้ามาช่วยในเรื่องนี้
             </div>
 
             <div className={Content.textContent}>
-               CSS Transition เป็น css property ที่ช่วย control ระหว่าง สถานการณ์ A กับ สถานการณ์ B ว่าระหว่างนั้นจะให้เกิดอะไรขึ้นได้บ้าง ในที่นี้ สถานการณ์ A หมายถึงปุ่มที่ยังไม่ถูก mouseover และ สถานการณ์ B หมายถึงปุ่มที่กำลังถูก mouseover อยู่นั่นเอง
+              CSS Transition เป็น css property ที่ช่วย control ระหว่าง สถานการณ์
+              A กับ สถานการณ์ B ว่าระหว่างนั้นจะให้เกิดอะไรขึ้นได้บ้าง ในที่นี้
+              สถานการณ์ A หมายถึงปุ่มที่ยังไม่ถูก mouseover และ สถานการณ์ B
+              หมายถึงปุ่มที่กำลังถูก mouseover อยู่นั่นเอง
             </div>
 
             <div className={Content.textContent}>
-                มาปลี่ยนปุ่มให้ smooth กันด้วย css transition โดยเริ่มจากรู้จักมันให้มากขึ้นกันก่อน
+              มาปลี่ยนปุ่มให้ smooth กันด้วย css transition
+              โดยเริ่มจากรู้จักมันให้มากขึ้นกันก่อน
             </div>
 
             {/* 1 */}
             <div className={Content.textTopic}>1. transition-property</div>
             <div className={Content.textContent}>
-              เป็นการกำหนด property ที่ต้องการให้เกิด transition ในที่นี้เราต้องการให้ background-color, color และ width เปลี่ยนอย่าง smooth ก็กำหนดลงไปเลย 
+              เป็นการกำหนด property ที่ต้องการให้เกิด transition
+              ในที่นี้เราต้องการให้ background-color, color และ width
+              เปลี่ยนอย่าง smooth ก็กำหนดลงไปเลย
             </div>
 
             <div className={Content.textContent}>
-              <Code className={Content.Code} code={transitionProperty} language="css" />
+              <Code
+                className={Content.Code}
+                code={transitionProperty}
+                language="css"
+              />
             </div>
 
             <div className={Content.textContent}>
-                ผลลัพท์จะยังไม่มีอะไรเปลี่ยนแปลงเพราะ เป็นแค่การกำหนด propterty ให้ transition ที่ต้องการจะให้เกิดการเปลี่ยนแปลงเฉยๆ สิ่งที่จะช่วยให้เกิดการ smooth คือ
+              ผลลัพท์จะยังไม่มีอะไรเปลี่ยนแปลงเพราะ เป็นแค่การกำหนด propterty
+              ให้ transition ที่ต้องการจะให้เกิดการเปลี่ยนแปลงเฉยๆ
+              สิ่งที่จะช่วยให้เกิดการ smooth คือ
             </div>
 
             {/* 2*/}
             <div className={Content.textTopic}>2. transition-duration</div>
 
             <div className={Content.textContent}>
-              คือการกำหนดเวลาที่ให้เกิดการเปลี่ยนแปลงจาก สถานการณ์ A ไปยัง สถานการณ์ B 
+              คือการกำหนดเวลาที่ให้เกิดการเปลี่ยนแปลงจาก สถานการณ์ A ไปยัง
+              สถานการณ์ B
             </div>
 
             <div className={Content.textContent}>
-              <Code className={Content.Code} code={transitionDuration} language="css" />
+              <Code
+                className={Content.Code}
+                code={transitionDuration}
+                language="css"
+              />
               <div>ผลลัพท์</div>
-             <button className={Blog3.btnClickDuration}>
-                    ลองกดดูสิ!
-              </button> 
+              <button className={Blog3.btnClickDuration}>ลองกดดูสิ!</button>
             </div>
 
             <div className={Content.textContent}>
-            Wow! เกิดการเปลี่ยนแปลงแบบ smooth แล้วทีนี้มาเข้าใจกันว่าเกิดอะไรขึ้น
-            <ul>
-                <li>การกำหนด transition-duration มี value เท่ากับ 1s เป็นการกำหนดเวลาการเปลี่ยนแปลงจาก สถานการณ์ A ไปยัง สถานการณ์ B มีเวลาเป็น 1 วินาที</li>
-                <li>transition-duration ช่องแรก 1s สัมพันธ์กับ transition-property: background-color</li>
-                <li>transition-duration ช่องสอง 1s สัมพันธ์กับ ransition-property: color</li>
-                <li>transition-duration ช่องสาม 1s สัมพันธ์กับ ransition-property: width</li>
-            </ul>
-             
+              Wow! เกิดการเปลี่ยนแปลงแบบ smooth
+              แล้วทีนี้มาเข้าใจกันว่าเกิดอะไรขึ้น
+              <ul>
+                <li>
+                  การกำหนด transition-duration มี value เท่ากับ 1s
+                  เป็นการกำหนดเวลาการเปลี่ยนแปลงจาก สถานการณ์ A ไปยัง สถานการณ์
+                  B มีเวลาเป็น 1 วินาที
+                </li>
+                <li>
+                  transition-duration ช่องแรก 1s สัมพันธ์กับ
+                  transition-property: background-color
+                </li>
+                <li>
+                  transition-duration ช่องสอง 1s สัมพันธ์กับ
+                  transition-property: color
+                </li>
+                <li>
+                  transition-duration ช่องสาม 1s สัมพันธ์กับ
+                  transition-property: width
+                </li>
+              </ul>
             </div>
-
-           
-
-          
 
             {/* 3 */}
-          
-            
-           
-            {/* 4 */}
-            
-           
-           
+            <div className={Content.textTopic}>3. transition-delay</div>
+            <div className={Content.textContent}>
+              จากการที่ได้เรียนรู้ transition-duration แต่ถ้ามาสังเกตุดีๆ ทุกๆ
+              property จะเริ่มการเปลี่ยนแปลงที่วินาทีที่ 0 เหมือนกันหมด
+              ถ้าเพิ่มเงื่อนไขเข้ามาละว่า ต้องการให้เปลี่ยน background-color และ
+              color เสร็จก่อน
+              เสร็จเรียบร้อยก่อนแล้วค่อยขยายความกว้างจะต้องทำอย่างไร
+            </div>
 
-         
+            <div className={Content.textContent}>
+              transition-delay จะมาช่วยในเรื่องนี้
+              โดยความสามารถของมันคือการหน่วงเวลาก่อนที่จะเริ่ม transition
+              นั้นได้ ดังตัวอย่าง
+            </div>
+
+            <div className={Content.textContent}>
+              <Code
+                className={Content.Code}
+                code={transitionDelay}
+                language="css"
+              />
+              <div>ผลลัพท์</div>
+              <button className={Blog3.btnClickDelay}>ลองกดดูสิ!</button>
+            </div>
+
+            <div className={Content.textContent}>
+              <ul>
+                <li>
+                  transition-delay ช่องแรก คือกำหนด delay เป็น o วินาที
+                  ก่อนจะเริ่มการเปลี่ยนแปลงของ transition
+                </li>
+                <li>
+                  transition-delay ช่องที่สอง คือกำหนด delay เป็น 1 วินาที
+                  ก่อนจะเริ่มการเปลี่ยนแปลงของ transition
+                </li>
+                <li>
+                  transition-delay ช่องที่สาม คือกำหนด delay เป็น 1 วินาที
+                  ก่อนจะเริ่มการเปลี่ยนแปลงของ transition
+                </li>
+              </ul>
+            </div>
+
+            {/*  4 */}
+            <div className={Content.textTopic}>
+              4. transition-timing-function
+            </div>
+            <div className={Content.textContent}>
+              เรามาเพิ่มเงื่อนไขที่ยากขึ้นมาอีกดีกว่า แบบว่า อยากให้เกิด
+              animation แบบช้าๆ แล้วจบแบบไวๆกัน จะทำอย่างไรละ พูดแล้ว งง
+              มาดูผลลัพท์กัน
+            </div>
+            <div className={Content.textContent}>
+              เพื่อความเห็นภาพที่ง่ายขึ้น ขอขยายความจากจาก 300px เป็น 500px
+              เมื่อเกิดการ hover ที่ปุ่ม
+            </div>
+
+            <div className={Content.textContent}>
+              <Code
+                className={Content.Code}
+                code={transitionFunction}
+                language="css"
+              />
+              <div>ผลลัพท์</div>
+              <button className={Blog3.btnClickFunction}>ลองกดดูสิ!</button>
+            </div>
+
+            <div className={Content.textContent}>
+                อธิยายได้ว่า
+                <ul>
+                    <li>มีการเพิ่ม transition-timing-function และกำหนด value เป็น ease-out</li>
+                    <li>ease-out คือ การสั่งให้เริ่มแบบช้าๆ และความเร็วค่อยๆเพิ่มขึ้น</li>
+                </ul>
+            </div>
 
             <div className={Content["textContent"] + " " + Content["pb50"]}>
-            <div>
-            <strong>ข้อมูลอ้างอิงจาก:</strong> https://ishadeed.com/article/clip-path/
+              <div>
+                <strong>ข้อมูลอ้างอิงจาก:</strong>{" "}
+                https://ishadeed.com/article/clip-path/
+              </div>
+              <div>
+                <strong>ข้อมูลอ้างอิงจาก:</strong>{" "}
+                https://www.w3schools.com/cssref/css3_pr_clip-path.asp
+              </div>
             </div>
-            <div>
-            <strong>ข้อมูลอ้างอิงจาก:</strong>  https://www.w3schools.com/cssref/css3_pr_clip-path.asp 
-            </div>
-            
-            
-            </div>
-          
-          
           </div>
         </div>
       </>

@@ -1,15 +1,15 @@
 .btnClick {
-  background-color: white;
-  padding: 15px;
-  border: 1px solid #2c2c2e;
-  width: 100px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #2c2c2e;
+    width: 100px;
 }
 
 .btnClick:hover {
-  background-color: #2c2c2e;
-  width: 300px;
-  color: white;
-  cursor: pointer
+    background-color: #2c2c2e;
+    width: 300px;
+    color: white;
+    cursor: pointer
 }
 
 .btnClickDuration {
@@ -18,12 +18,48 @@
     border: 1px solid #2c2c2e;
     width: 100px;
     transition-property: background-color, color, width;
-    transition-duration: 1s, 1s, 1s; 
-  }
-  
-  .btnClickDuration:hover {
+    transition-duration: 1s, 1s, 1s;
+}
+
+.btnClickDuration:hover {
     background-color: #2c2c2e;
     width: 300px;
     color: white;
     cursor: pointer
-  }
+}
+
+.btnClickDelay {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #2c2c2e;
+    width: 100px;
+    transition-property: background-color, color, width;
+    transition-duration: 1s, 1s, 1s;
+    transition-delay: 0s, 0s, 1s;
+}
+
+.btnClickDelay:hover {
+    background-color: #2c2c2e;
+    width: 300px;
+    color: white;
+    cursor: pointer
+}
+
+
+.btnClickFunction {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #2c2c2e;
+    width: 100px;
+    transition-property: background-color, color, width;
+    transition-duration: 1s, 1s, 1s;
+    transition-delay: 0s, 0s, 1s;
+    transition-timing-function: ease-out;
+}
+
+.btnClickFunction:hover {
+    background-color: #2c2c2e;
+    width: 500px;
+    color: white;
+    cursor: pointer
+}

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import styles from "../components/layout.module.css";
 import Link from "next/link";
-import testJson from '../public/test.json'
+import testJson from '../public/test.json?'
 
 //home page
 export default function Home({ blogList }) {
@@ -54,7 +54,7 @@ export default function Home({ blogList }) {
           </Link> */}
 
           { testJson.map((item, index) => {
-            return   <Link href={item.path} key={item.id}>
+            return   <Link href={item.path} key={item.id} >
             <a>
               <div className={styles.blogContainer}>
                 <div className={styles.blogImage}>

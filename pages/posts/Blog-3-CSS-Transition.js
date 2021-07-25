@@ -1,26 +1,46 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
 import Content from "./content.module.css";
+import Blog3 from "./blog3.module.css";
 import Blog2 from "./blog2.module.css";
 import Code from "../../styles/Code";
 import ClipPathCover from "../../public/imageCover/Clippath.png";
 import Image from "next/image";
 
 export default function ClipPath() {
-  const cssOriginal = `.custom-clip-path { 
-    background-color: #50E190;
-    height: 100px;
-    width: 200px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}`;
+  const cssOriginal = `.btnClick {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #2c2c2e;
+    width: 100px;
+  }
+.btnClick:hover {
+    background-color: #2c2c2e;
+    color: white;
+    width: 300px;
+    cursor: pointer
+  }`;
 
-  const inset = `.custom-clip-path { 
+  const transitionProperty = `.btnClick {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #2c2c2e;
+    width: 100px;
+
     // code ที่เพิ่มเข้ามา
-    clip-path: inset(70px 40px 70px 40px);
-}`;
+    transition-property: background-color, color, width;
+  }`;
+
+  const transitionDuration = `.btnClick {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #2c2c2e;
+    width: 100px;
+
+    // code ที่เพิ่มเข้ามา
+    transition-property: background-color, color, width;
+    transition-duration: 1s, 1s, 1s; 
+  }`;
 
   const insetWithRound = `.custom-clip-path { 
     // code ที่เพิ่มเข้ามา
@@ -51,7 +71,7 @@ export default function ClipPath() {
     <Layout>
       <>
         <Head>
-          <title>nuengStory | CSS Trick: Element in center</title>
+          <title>nuengStory | CSS Transition</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
@@ -72,7 +92,7 @@ export default function ClipPath() {
         <div className={Content.blogContentContainer}>
           <div>
             <div className={Content.textHeader}>
-              CSS: กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path
+            Control Animation ได้ง่ายๆ ด้วย CSS Transition
             </div>
 
             <div className={Content.imageCoverContainer}>
@@ -86,21 +106,7 @@ export default function ClipPath() {
           </div>
 
             <div className={Content.textContent}>
-              <strong className={Content.Highlight}>Clip-path</strong>เป็น css
-              selector ตัวนึงที่น่าสนใจ ความสามารถคือ
-              <ul>
-                <li>
-                  ช่วยตัดแต่ง element หรือ ปรับเปลี่ยน element
-                  ให้เป็นรูปร่าง(shape) ต่างๆ ตามแบบที่เราต้องการได้
-                </li>
-              </ul>
-              โดยบทความนี้จะอธิบายเกี่ยวกับพื้นฐานคุณสมบัติ clip-path
-              แต่ละแบบว่าใช้งานอย่างไร
-            </div>
-
-            <div className={Content.textContent}>
-              แต่ก่อนอื่นผมขอใช้ code ส่วนนี้เป็น code
-              ตั้งต้นสำหรับใช้งานในบทความ
+             เริ่มแรกผมขอเกลิ่นโดยการสร้างปุ่มขึ้นมาก่อน หลังจากนั้นก็จะใส่ style ให้ปุ่มเพื่อให้ดูสวยงามขึ้น ไม่หมดแค่นั้นเพื่อให้เป็นมิตรกับผู้ใช้ขณะ mouseover  ผมก็เพิ่มลูกเล่นโดยการเปลี่ยน background และ เปลี่ยนสีของปุ่มเข้าไป  ก็จะได้ตามภาพด้านล่าง
             </div>
 
             <div className={Content.textContent}>
@@ -109,55 +115,62 @@ export default function ClipPath() {
                 code={cssOriginal}
                 language="css"
               />
-              <div className={Blog2.OriginalCode}>
-                <div>ไล่แล้ว ออกไป!</div>
-              </div>
+              <div>ผลลัพท์</div>
+             <button class={Blog3.btnClick}>
+                    ลองกดดูสิ!
+              </button> 
+            </div>
+
+            <div className={Content.textContent}>
+               จะสังเกตุได้ว่าตอนเอา mouse ไป hover  นั้น ปุ่มจะเปลียนขนาดความกว้างจากเดิม 100px เป็น 300px จะเปลี่นนแบบกระทันหัน! ไม่มีความ smooth เลย  ฉันต้องการความ Smooth  
+               ดังนั้น จึงต้องใช้ CSS property ที่ชื่อว่า transition เข้ามาช่วยในเรื่องนี้
+            </div>
+
+            <div className={Content.textContent}>
+               CSS Transition เป็น css property ที่ช่วย control ระหว่าง สถานการณ์ A กับ สถานการณ์ B ว่าระหว่างนั้นจะให้เกิดอะไรขึ้นได้บ้าง ในที่นี้ สถานการณ์ A หมายถึงปุ่มที่ยังไม่ถูก mouseover และ สถานการณ์ B หมายถึงปุ่มที่กำลังถูก mouseover อยู่นั่นเอง
+            </div>
+
+            <div className={Content.textContent}>
+                มาปลี่ยนปุ่มให้ smooth กันด้วย css transition โดยเริ่มจากรู้จักมันให้มากขึ้นกันก่อน
             </div>
 
             {/* 1 */}
-            <div className={Content.textTopic}>Clip-path: Inset()</div>
+            <div className={Content.textTopic}>1. transition-property</div>
             <div className={Content.textContent}>
-              จะเป็นการซ่อนบางส่วนหรือ crop element
-              เข้าไปข้างในรูปภาพตามที่เรากำหนด
+              เป็นการกำหนด property ที่ต้องการให้เกิด transition ในที่นี้เราต้องการให้ background-color, color และ width เปลี่ยนอย่าง smooth ก็กำหนดลงไปเลย 
             </div>
 
             <div className={Content.textContent}>
-              <Code className={Content.Code} code={inset} language="css" />
-
-              <div className={Blog2.Inset}>
-                <div>ไล่แล้ว ออกไป!</div>
-              </div>
+              <Code className={Content.Code} code={transitionProperty} language="css" />
             </div>
 
             <div className={Content.textContent}>
-              อธิบายได้ว่า มีการกำหนด
-              <strong className={Content.Highlight}>
-                clip-path: inset(บน=70px ขวา=40px ล่าง=70px ซ้าย=40px);
-              </strong>
-              <ul>
-                <li>ด้านบนให้ ซ่อน พื้นที่มา 70px</li>
-                <li>ด้านขวาให้ ซ่อน พื้นที่มา 40px</li>
-                <li>ด้านล่างให้ ซ่อน พื้นที่มา 70px</li>
-                <li>ด้านซ้ายให้ ซ่อน พื้นที่มา 40px</li>
-              </ul>
-              การใช้{" "}
-              <strong className={Content.Highlight}>clip-path: inset;</strong>{" "}
-              นั้น ไม่ใช่เป็นการ Crop หรือตัดพื้นที่
-              แต่เป็นการซ่อน(Hidden)ส่วนที่ต้องการโดย Element
-              นั้นยังมีขนาดเท่าเดิม
+                ผลลัพท์จะยังไม่มีอะไรเปลี่ยนแปลงเพราะ เป็นแค่การกำหนด propterty ให้ transition ที่ต้องการจะให้เกิดการเปลี่ยนแปลงเฉยๆ สิ่งที่จะช่วยให้เกิดการ smooth คือ
+            </div>
+
+            <div className={Content.textTopic}>2. transition-duration</div>
+
+            <div className={Content.textContent}>
+              คือการกำหนดเวลาที่ให้เกิดการเปลี่ยนแปลงจาก สถานการณ์ A ไปยัง สถานการณ์ B 
             </div>
 
             <div className={Content.textContent}>
-              #Trickเล็กน้อย เราสามารถกำหนดขอบมนของ element ได้ด้วยโดยการเพิ่ม
-              <Code
-                className={Content.Code}
-                code={insetWithRound}
-                language="css"
-              />
-              <div className={Blog2.InsetWithRound}>
-                <div>ไล่แล้ว ออกไป!</div>
-              </div>
-              อธิบายได้ว่า มีการกำหนด ขอบมน 20px ให้กับขอบแต่ละด้าน
+              <Code className={Content.Code} code={transitionDuration} language="css" />
+              <div>ผลลัพท์</div>
+             <button class={Blog3.btnClickDuration}>
+                    ลองกดดูสิ!
+              </button> 
+            </div>
+
+            <div className={Content.textContent}>
+            Wow! เกิดการเปลี่ยนแปลงแบบ smooth แล้วทีนี้มาเข้าใจกันว่าเกิดอะไรขึ้น
+            <ul>
+                <li>การกำหนด transition-duration มี value เท่ากับ 1s เป็นการกำหนดเวลาการเปลี่ยนแปลงจาก สถานการณ์ A ไปยัง สถานการณ์ B มีเวลาเป็น 1 วินาที</li>
+                <li>transition-duration ช่องแรก 1s สัมพันธ์กับ transition-property: background-color</li>
+                <li>transition-duration ช่องสอง 1s สัมพันธ์กับ ransition-property: color</li>
+                <li>transition-duration ช่องสาม 1s สัมพันธ์กับ ransition-property: width</li>
+            </ul>
+             
             </div>
 
             {/* 2 */}

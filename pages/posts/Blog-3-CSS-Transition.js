@@ -310,25 +310,31 @@ export default function ClipPath() {
               <div className={Content.textTopic}>5. transition shorthand รวมทุก property ไว้ในบรรทัดเดียว</div>
 
               <div className={Content.textContent}>
-              <strong className={Content.Highlight}>  transition: property | duration | timing-function | delay </strong>
+              <strong className={Content.Highlight}>  transition: property, duration, timing-function, delay</strong>
               </div>
 
               <div className={Content.textContent}>
-              transition: background-color 1s 0s ease-in,
-                          color 1s 0s ease-in,
-                          width 1s 1s ease-in;
+              <Code
+                className={Content.Code}
+                code={transitionShortHand}
+                language="css"
+              />
+              </div>
+
+              <div className={Content.textContent}>
+                บรรทัดเดียวก็จริง แต่จะดูยาวไปหน่อย เอาเป็นว่าสามารถเลือกเขียนได้ทั้งสองแบบตามที่ถนัดได้เลยครับ
               </div>
              
           
 
             <div className={Content["textContent"] + " " + Content["pt50"]}>
               <div>
-                <strong>ข้อมูลอ้างอิงจาก:</strong>{" "}
-                https://ishadeed.com/article/clip-path/
+                <strong>ข้อมูลอ้างอิงจาก: </strong>
+                https://www.w3schools.com/css/css3_transitions.asp
               </div>
               <div>
-                <strong>ข้อมูลอ้างอิงจาก:</strong>{" "}
-                https://www.w3schools.com/cssref/css3_pr_clip-path.asp
+                <strong>ข้อมูลอ้างอิงจาก: </strong>
+                https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
               </div>
             </div>
           </div>

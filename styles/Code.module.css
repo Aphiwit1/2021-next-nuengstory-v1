@@ -1,7 +1,7 @@
 .Code{
     font-size: 14px;
     overflow-x: scroll;
-    max-width: 90vw;
+    max-width: 80vw;
     
 }
 
@@ -12,6 +12,7 @@
 @media only screen and (max-width: 500px) { 
     .Code{
         font-size: 10px;    
+        max-width: 90vw;
     }
 }
 

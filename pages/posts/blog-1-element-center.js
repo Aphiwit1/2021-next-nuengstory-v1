@@ -253,9 +253,10 @@ export default function Test() {
               </ul>
             </div>
             <div className={Content["textContent"] + " " + Content["pb50"]}>
-              <strong>ข้อมูลอ้างอิงจาก:</strong> https://www.w3schools.com
+              <div className={Content["textSource"]}>
+               <strong>ข้อมูลอ้างอิงจาก:</strong> https://www.w3schools.com
+              </div>
             </div>
-            
           </div>
         </div>
       </>

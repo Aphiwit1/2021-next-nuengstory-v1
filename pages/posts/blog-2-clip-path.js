@@ -252,10 +252,10 @@ export default function ClipPath() {
             </div>
 
             <div className={Content["textContent"] + " " + Content["pb50"]}>
-            <div>
+            <div className={Content["textSource"]}>
             <strong>ข้อมูลอ้างอิงจาก:</strong> https://ishadeed.com/article/clip-path/
             </div>
-            <div>
+            <div className={Content["textSource"]}>
             <strong>ข้อมูลอ้างอิงจาก:</strong>  https://www.w3schools.com/cssref/css3_pr_clip-path.asp 
             </div>
             

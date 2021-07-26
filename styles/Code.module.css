@@ -1,12 +1,18 @@
 .Code{
     font-size: 14px;
     overflow-x: scroll;
-    max-width: 80vw;
-    
+    max-width: 50vw;
 }
 
 .borderRadius20 {
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .Code{ 
+        max-width: 80vw;
+    }
+  
 }
 
 @media only screen and (max-width: 500px) { 

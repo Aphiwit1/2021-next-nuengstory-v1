@@ -135,13 +135,18 @@
         font-size: 20px;
         line-height: 1.7;
     }
+
+    .textSource {
+        font-size: 12px;
+        font-family: 'Kanit', sans-serif;
+    }
  
 }
 
 @media only screen and (max-width: 640px) { 
     .textContent
     {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 

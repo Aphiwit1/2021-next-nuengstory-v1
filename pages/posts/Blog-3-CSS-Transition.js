@@ -327,12 +327,12 @@ export default function ClipPath() {
              
           
 
-            <div className={Content["textContent"] + " " + Content["pt50"]}>
-              <div>
+            <div className={Content["textContent"] + " " + Content["pt50"] }>
+              <div className={Content["textSource"]}>
                 <strong>ข้อมูลอ้างอิงจาก: </strong>
                 https://www.w3schools.com/css/css3_transitions.asp
               </div>
-              <div>
+              <div className={Content["textSource"]}>
                 <strong>ข้อมูลอ้างอิงจาก: </strong>
                 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
               </div>

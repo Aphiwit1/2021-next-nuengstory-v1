@@ -5,6 +5,7 @@ import Blog3 from "./blog3.module.css";
 import Blog2 from "./blog2.module.css";
 import Code from "../../styles/Code";
 import ClipPathCover from "../../public/imageCover/Clippath.png";
+import TransitionCover from "../../public/imageCover/TransitionCover.png";
 import Image from "next/image";
 
 export default function ClipPath() {
@@ -113,8 +114,8 @@ export default function ClipPath() {
             <div className={Content.imageCoverContainer}>
               {/* <Image alt="blog cover" className={Content.contentImageCover} layout="fill" src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"  /> */}
               <Image
-                src={ClipPathCover}
-                alt="Element-center"
+                src={TransitionCover}
+                alt="Transition Cover Image"
                 width={500}
                 height={500}
               />

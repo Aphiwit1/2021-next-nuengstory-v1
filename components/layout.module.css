@@ -203,6 +203,9 @@
   border-bottom: 5px solid #f4d150;
 }
 
+.footer_imageProfile img {
+  border-radius: 50%;
+}
 @media only screen and (max-width: 500px) {
   .headerLeft {
     font-size: 24px;

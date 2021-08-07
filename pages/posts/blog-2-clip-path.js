@@ -61,10 +61,9 @@ export default function ClipPath() {
             content="กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path"
             key="title"
           />
-          {/* <meta property="og:description" content="ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย" key="ogdesc" /> */}
           <meta
             property="og:image"
-            content="https://dl.dropboxusercontent.com/s/8ciy7sc5kd9ifwd/Clippath.png?dl=0"
+            content="https://dl.dropboxusercontent.com/s/n26oi9o29hjysrt/ogImageBlog3.png?dl=0"
             key="ogimage"
           />
         </Head>

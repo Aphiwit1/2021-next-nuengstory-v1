@@ -97,8 +97,8 @@ export default function ClipPath() {
             content="Control Animation ได้ง่ายๆ ด้วย CSS Transition"
             key="title"
           />
-          {/* <meta property="og:description" content="ผมจะมี html code ตั้งต้นเพื่อใช้กับแต่ละวิธีนะครับ ตามด้านล่างนี้เลย" key="ogdesc" /> */}
-          <meta
+
+              <meta
             property="og:image"
             content="https://dl.dropboxusercontent.com/s/2e6tlrbnuvxp1ff/TransitionCover.jpg?dl=0"
             key="ogimage"

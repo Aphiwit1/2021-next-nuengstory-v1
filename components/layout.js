@@ -51,7 +51,7 @@ export default function Layout({ children, home }) {
                 </div>
             )} */}
       <div className={styles.MyCaption}>
-        <div class={styles.footer_imageProfile}>
+        <div className={styles.footer_imageProfile}>
           <Image src={Profile} alt="my img profile" width={50} height={50} />
         </div>
         <div>{myCaptionPath1}</div>

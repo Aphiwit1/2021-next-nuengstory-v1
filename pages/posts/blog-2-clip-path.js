@@ -61,7 +61,7 @@ export default function ClipPath() {
             content="กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path"
             key="title"
           />
-            <meta property="keywords" content="กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path"></meta>
+            <meta property="keywords" content="css, css clip-path, css clip-path property, กำหนดรูปร่างต่างๆ ด้วย clip-path"></meta>
             <meta property="author" content="nueng aphiwit"></meta>
           <meta
             property="og:image"

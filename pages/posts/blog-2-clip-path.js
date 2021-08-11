@@ -3,7 +3,7 @@ import Head from "next/head";
 import Content from "./content.module.css";
 import Blog2 from "./blog2.module.css";
 import Code from "../../styles/Code";
-import ClipPathCover from "../../public/imageCover/Clippath.png";
+import ClipPathCover from "../../public/imageCover/b2_landscape.png";
 import Image from "next/image";
 
 export default function ClipPath() {
@@ -51,7 +51,7 @@ export default function ClipPath() {
     <Layout>
       <>
         <Head>
-          <title>nuengStory | CSS Trick: Element in center</title>
+          <title>nuengStory | CSS Clip-path</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
@@ -61,6 +61,8 @@ export default function ClipPath() {
             content="กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path"
             key="title"
           />
+            <meta property="keywords" content="กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path"></meta>
+            <meta property="author" content="nueng aphiwit"></meta>
           <meta
             property="og:image"
             content="https://dl.dropboxusercontent.com/s/n26oi9o29hjysrt/ogImageBlog3.png?dl=0"
@@ -79,8 +81,8 @@ export default function ClipPath() {
           <Image
         src={ClipPathCover}
         alt="Element-center"
-        width={500}
-        height={500}
+        width={1200}
+        height={627}
       />
           </div>
 

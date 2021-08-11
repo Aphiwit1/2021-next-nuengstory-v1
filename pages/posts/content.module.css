@@ -22,13 +22,22 @@
 }
 
 .textHeader {
-    font-size: 48px;
+    /* font-size: 48px;
     font-weight: 500;
     margin: 1em 0px;
     color: #393838;
     border-left: 10px solid #f4d150;
     padding-left: 5px;
+    font-family: 'Kanit', sans-serif; */
+    font-size: 36px;
+    font-weight: 700;
+    margin: 1em 0px;
+    color: #393838;
+    padding-left: 5px;
     font-family: 'Kanit', sans-serif;
+    border-bottom: 4px solid #f4d150;
+    text-align: center;
+    border-top: 4px solid #f4d150;
 
 }
 

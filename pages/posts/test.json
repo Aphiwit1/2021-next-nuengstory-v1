@@ -1,43 +1,42 @@
 [
-    {
-        "id": 1,
-        "image": "/imageCover/element_center.png",
-        "title": "#CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์",
-        "date": "31/05/64",
-        "createdBy": "Created by Aphiwit",
-        "path": "posts/blog-1-element-center"
-    },
-    {
-        "id": 2,
-        "image": "/imageCover/Clippath.png",
-        "title": "#CSS: กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path",
-        "date": "31/05/64",
-        "createdBy": "Created by Aphiwit",
-        "path": "posts/blog-2-clip-path"
-    },
-    {
-        "id": 3,
-        "image": "/imageCover/Clippath.png",
-        "title": "Control Animation ได้ง่ายๆ ด้วย CSS Transition" ,
-        "date": "31/05/64",
-        "createdBy": "Created by Aphiwit",
-        "path": "posts/blog-2-clip-path"
-    },
-    {
-        "id": 4,
-        "image": "/imageCover/Clippath.png",
-        "title": "Control Animation ได้ง่ายๆ ด้วย CSS Transition" ,
-        "date": "31/05/64",
-        "createdBy": "Created by Aphiwit",
-        "path": "posts/blog-2-clip-path"
-    },
-    {
-        "id": 5,
-        "image": "/imageCover/Clippath.png",
-        "title": "Control Animation ได้ง่ายๆ ด้วย CSS Transition" ,
-        "date": "31/05/64",
-        "createdBy": "Created by Aphiwit",
-        "path": "posts/blog-2-clip-path"
-    }
- 
+  {
+    "id": 1,
+    "image": "/imageCover/element_center.png",
+    "title": "#CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์",
+    "date": "31/05/64",
+    "createdBy": "Created by Aphiwit",
+    "path": "posts/blog-1-element-center"
+  },
+  {
+    "id": 2,
+    "image": "/imageCover/Clippath.png",
+    "title": "#CSS: กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path",
+    "date": "31/05/64",
+    "createdBy": "Created by Aphiwit",
+    "path": "posts/blog-2-clip-path"
+  },
+  {
+    "id": 3,
+    "image": "/imageCover/Clippath.png",
+    "title": "Control Animation ได้ง่ายๆ ด้วย CSS Transition",
+    "date": "31/05/64",
+    "createdBy": "Created by Aphiwit",
+    "path": "posts/blog-2-clip-path"
+  },
+  {
+    "id": 4,
+    "image": "/imageCover/Clippath.png",
+    "title": "Control Animation ได้ง่ายๆ ด้วย CSS Transition",
+    "date": "31/05/64",
+    "createdBy": "Created by Aphiwit",
+    "path": "posts/blog-2-clip-path"
+  },
+  {
+    "id": 5,
+    "image": "/imageCover/Clippath.png",
+    "title": "Control Animation ได้ง่ายๆ ด้วย CSS Transition",
+    "date": "31/05/64",
+    "createdBy": "Created by Aphiwit",
+    "path": "posts/blog-2-clip-path"
+  }
 ]

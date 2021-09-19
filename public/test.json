@@ -1,27 +1,34 @@
 [
-    {
-        "id": 1,
-        "image": "/imageCover/element_center.png",
-        "title": "#CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์",
-        "date": "31/05/64",
-        "createdBy": "Created by Aphiwit",
-        "path": "posts/blog-1-element-center"
-    },
-    {
-        "id": 2,
-        "image": "/imageCover/b2_square.png",
-        "title": "#CSS: กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path",
-        "date": "31/05/64",
-        "createdBy": "Created by Aphiwit",
-        "path": "posts/blog-2-clip-path"
-    },
-    {
-        "id": 3,
-        "image": "/imageCover/TransitionCover.png",
-        "title": "Control Animation ได้ง่ายๆ ด้วย CSS Transition" ,
-        "date": "31/05/64",
-        "createdBy": "Created by Aphiwit",
-        "path": "posts/Blog-3-CSS-Transition"
-    }
- 
+  {
+    "id": 1,
+    "image": "/imageCover/element_center.png",
+    "title": "#CSS Trick: วิธีจัด Element ไว้ตรงกลางของหน้าจอเว็บไซต์",
+    "date": "02/05/2021",
+    "createdBy": "Created by Aphiwit",
+    "path": "posts/blog-1-element-center"
+  },
+  {
+    "id": 2,
+    "image": "/imageCover/b2_square.png",
+    "title": "#CSS: กำหนด element เป็นรูปร่างต่างๆด้วย Clip-path",
+    "date": "04/06/2021",
+    "createdBy": "Created by Aphiwit",
+    "path": "posts/blog-2-clip-path"
+  },
+  {
+    "id": 3,
+    "image": "/imageCover/TransitionCover.png",
+    "title": "Control Animation ได้ง่ายๆ ด้วย CSS Transition",
+    "date": "05/07/2021",
+    "createdBy": "Created by Aphiwit",
+    "path": "posts/Blog-3-CSS-Transition"
+  },
+  {
+    "id": 4,
+    "image": "/imageCover/TransitionCover.png",
+    "title": "มาตั้งชื่อ CSS Class ให้เข้าใจง่าย ด้วย BEM Method กันเถอะ",
+    "date": "17/09/2021",
+    "createdBy": "Created by Aphiwit",
+    "path": "posts/blog-4-bem-method"
+  }
 ]

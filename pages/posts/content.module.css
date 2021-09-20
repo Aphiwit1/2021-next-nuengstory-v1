@@ -147,7 +147,8 @@
     line-height: 1.7;
   }
 
-  .textTopic {
+  .textTopic,
+  .textTopicProblem {
     font-size: 20px;
     line-height: 1.7;
   }

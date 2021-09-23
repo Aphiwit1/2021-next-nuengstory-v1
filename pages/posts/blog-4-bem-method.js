@@ -7,6 +7,7 @@ import Code from "../../styles/Code";
 import TransitionCover from "../../public/imageCover/TransitionCover.png";
 import img1 from "../../public/imageCover/Junior_blog.png";
 import img2 from "../../public/imageCover/Team.png";
+import imgCover from "../../public/imageCover/blog4_cover.png";
 import Image from "next/image";
 
 export default function ClipPath() {
@@ -140,13 +141,13 @@ export default function ClipPath() {
                     />
                     <meta
                         property="og:title"
-                        content="Control Animation ได้ง่ายๆ ด้วย CSS Transition"
+                        content=" ตั้งชื่อ SCSS Class ให้เข้าใจง่ายด้วย BEM Method"
                         key="title"
                     />
 
                     <meta
                         property="og:image"
-                        content="https://dl.dropboxusercontent.com/s/2e6tlrbnuvxp1ff/TransitionCover.jpg?dl=0"
+                        content="https://dl.dropboxusercontent.com/s/q3hx6gho30ulgzf/blog4_cover.png?dl=0"
                         key="ogimage"
                     />
                 </Head>
@@ -158,9 +159,19 @@ export default function ClipPath() {
                             ตั้งชื่อ SCSS Class ให้เข้าใจง่าย<br></br>ด้วย BEM Method
             </div>
 
+                        <div className={Content.imgBlogContainer}>
+                            {/* <Image alt="blog cover" className={Content.contentImageCover} layout="fill" src="https://dl.dropboxusercontent.com/s/owwafmerbzupwyq/blog1-cover.png?dl=0"  /> */}
+                            <Image
+                                src={imgCover}
+                                alt="BEM Cover Image"
+                                width={1200}
+                                height={600}
+                            />
+                        </div>
+
                         {/* Content */}
                         <div className={Content.textTopicProblem}>
-                            ปัญหาที่เจอระหว่าง Coding
+                            เริ่มจากปัญหาที่เจอระหว่าง Coding
             </div>
 
                         <div className={Content.textContent}>

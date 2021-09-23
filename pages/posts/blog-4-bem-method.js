@@ -3,8 +3,10 @@ import Head from "next/head";
 import Content from "./content.module.css";
 import Blog3 from "./blog3.module.css";
 import Code from "../../styles/Code";
-import ClipPathCover from "../../public/imageCover/Clippath.png";
+
 import TransitionCover from "../../public/imageCover/TransitionCover.png";
+import img1 from "../../public/imageCover/Junior_blog.png";
+import img2 from "../../public/imageCover/Team.png";
 import Image from "next/image";
 
 export default function ClipPath() {
@@ -248,6 +250,18 @@ export default function ClipPath() {
                             />
                         </div>
 
+                        <div className={Content.textContent}>ผลลัพท์</div>
+
+                        <div className={Content.imgBlogContainer}>
+
+                            <Image
+                                src={img1}
+                                alt="Junior Card Image"
+                                width={1200}
+                                height={600}
+                            />
+                        </div>
+
                         <div className={Content.textTopic}>มี Requirement เพิ่มเติม</div>
                         <div className={Content.textContent}>
                             <ul>
@@ -273,6 +287,20 @@ export default function ClipPath() {
                             />
                         </div>
 
+                        <div className={Content.textContent}>ผลลัพท์</div>
+
+                        <div className={Content.imgBlogContainer}>
+
+                            <Image
+                                src={img2}
+                                alt="Team Card Image"
+                                width={1200}
+                                height={500}
+                            />
+                        </div>
+
+
+
                         <div className={Content.textContent}>
                             เพียงแค่เพิ่ม class ที่เป็น แบบ modifier สำหรับ card อื่นๆ ก็สามารถทำได้แล้ว
                         </div>
@@ -280,6 +308,8 @@ export default function ClipPath() {
                         <div className={Content.textContent}>
                             ทั้งหมดนี้ก็เป็นเรื่องของการใช้งาน BEM method เบื้องต้น ไว้เจอกันใหม่ Blog หน้าครับ
                         </div>
+
+
 
 
                     </div>
